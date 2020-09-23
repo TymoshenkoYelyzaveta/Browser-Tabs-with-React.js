@@ -70,3 +70,16 @@ body {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
+.highlight {
+  display: block;
+  position: absolute;
+  top: -10px;
+  height: 80px;
+  width: 300px;
+  border-radius: 50%;
+  opacity: 0.4;
+  background: radial-gradient(rgb(179, 241, 177), rgba(176, 233, 190, 0));
+  pointer-events: none;
+  transition: 0.3s ease all;
+}
