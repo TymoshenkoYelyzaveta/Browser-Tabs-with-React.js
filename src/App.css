@@ -60,6 +60,13 @@ body {
   font-size: 18px;
 }
 
+.browser__tab .link.isActive {
+  color: #9ba47f;
+}
+.isActive {
+  background-color: #f0d5b5;
+}
+
 .browser__viewport {
   display: flex;
   align-items: center;
