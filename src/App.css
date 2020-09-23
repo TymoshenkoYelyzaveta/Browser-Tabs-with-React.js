@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  background-color: #5ca39b;
 }
 
-.App-link {
-  color: #61dafb;
+.app h1 {
+  margin: 0 0 30px 0;
+  font-size: 30px;
+  color: #f0d5b5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.browser {
+  display: flex;
+  flex-direction: column;
+  min-width: 40%;
+  min-height: 50vh;
+  border-radius: 5px;
+  background-color: #f0d5b5;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.browser__tabs {
+  display: flex;
+  flex-shrink: 1;
+  padding: 10px 10px 0 10px;
+  border-bottom: 1px solid #9ba47f;
+}
+
+.browser__tab {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  min-width: 120px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #9ba47f;
+  transition: 0.3s ease all;
+}
+
+.browser__tab a {
+  display: block;
+  padding: 12px 25px;
+  text-decoration: none;
+  color: #f0d5b5;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.browser__viewport {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ba47f;
+  flex: 1;
+  flex-grow: 1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
